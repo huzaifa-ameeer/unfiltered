@@ -71,9 +71,9 @@ export default function BlogSection() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredPosts.map((post) => (
           <Link
-            href="/post/post"
+            href="/post/slug"
             key={post.title}
-            className="block rounded-xl border overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[5px_5px_0px_#c2410c]"
+            className="block rounded-xl border border-gray-800 overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[5px_5px_0px_#c2410c]"
           >
             <div className="aspect-video w-full overflow-hidden">
               <img
