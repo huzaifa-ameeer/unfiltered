@@ -59,7 +59,7 @@ export default function BlogSection() {
       <div className="flex gap-2 flex-wrap justify-center mb-10">
         {tabs.map((tab) => (
           <button
-            className={`px-4 py-2 rounded-full bg-white text-black cursor-pointer text-sm font-semibold transition-all duration-100 border shadow-[4px_4px_0px_#c2410c] hover:text-black active:translate-x-1 active:translate-y-1 active:shadow-none ${active === tab ? "bg-white text-black" : "text-gray-600 hover:text-black"}`}
+            className={`px-4 py-2 rounded-md mr-2 bg-gray-300 text-black cursor-pointer text-sm font-semibold transition-all duration-100 border shadow-[4px_4px_0px_#c2410c] hover:text-black active:translate-x-1 active:translate-y-1 active:shadow-none ${active === tab ? "bg-white text-black" : "text-gray-600 hover:text-black"}`}
             key={tab}
             onClick={() => setActive(tab)}
           >
